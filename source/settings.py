@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f+@qe(ei%n#@h^*0$54vl#a9ukrgfa70wa3ed!47g7k#_c+76j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['online-digonstic-lab-reporting.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','online-digonstic-lab-reporting.herokuapp.com']
 
 
 # Application definition
