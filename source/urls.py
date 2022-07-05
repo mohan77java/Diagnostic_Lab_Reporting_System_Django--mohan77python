@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 from .views import home
 from .views import DevelopersView
 
+from Django.views.static import serve
+from django.conf.urls import url
 
 urlpatterns = [
 
@@ -34,6 +36,9 @@ urlpatterns = [
 
     # Developers
     path('developers/', DevelopersView.as_view(), name='developers'),
+
+ url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
