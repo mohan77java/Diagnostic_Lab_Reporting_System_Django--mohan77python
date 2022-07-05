@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 from .views import home
 from .views import DevelopersView
 
-from Django.views.static import serve
+from django.views.static import serve
 from django.conf.urls import url
 
 urlpatterns = [
